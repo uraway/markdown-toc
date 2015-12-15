@@ -7,7 +7,7 @@ class Toc
     @list = []
     @options =
       depthFrom: 2  #depthFrom
-      depthTo: 6  # depthTo
+      depthTo: 4  # depthTo
       withLinks: 1  # withLinks
       updateOnSave: 1 # updateOnSave
       orderedList: 0 # orderedList
@@ -122,6 +122,8 @@ class Toc
   # create hierarchical markdown list
   __createList: () ->
     list = []
+    depthFrom = if @options.depthFrom isnt undefined then @options.depthFrom else 1
+    depthTo = if @options.depthTo isnt undefined then @options.depthTo else 6
     indicesOfDepth = Array.apply(null, new Array(6)).map(Number.prototype.valueOf, 0);
     for own i, item of @list
       row = []
