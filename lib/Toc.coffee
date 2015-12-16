@@ -87,7 +87,7 @@ class Toc
     @__updateList()
     if Object.keys(@list).length > 0
       text = []
-      text.push "<!-- TOC depthFrom:"+@options.depthFrom+"depthTo:"+@options.depthTo+ "withLinks:"+@options.withLinks+" updateOnSave:"+@options.updateOnSave+" orderedList:"+@options.orderedList+" -->\n"
+      text.push "<!-- TOC depthFrom:"+@options.depthFrom+" depthTo:"+@options.depthTo+ " withLinks:"+@options.withLinks+" updateOnSave:"+@options.updateOnSave+" orderedList:"+@options.orderedList+" -->\n"
       list = @__createList()
       if list isnt false
         Array.prototype.push.apply text, list
@@ -127,7 +127,6 @@ class Toc
     indicesOfDepth = Array.apply(null, new Array(6)).map(Number.prototype.valueOf, 0);
     for own i, item of @list
       row = []
-
       for tab in [depthFrom..item.depth] when tab > depthFrom
         row.push "\t"
       if @options.orderedList is 1
