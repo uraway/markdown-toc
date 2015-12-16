@@ -11,3 +11,6 @@ Generate TOC (*table of contents*) of headlines from parsed [markdown](http://en
 - Enable or disable links
 - Refresh list on save
 - Use ordered list (1. ..., 2. ...) by [spjoe](https://github.com/spjoe)
+
+## Fork
+forked from [nok/markdown-toc](https://github.com/nok/markdown-toc)
