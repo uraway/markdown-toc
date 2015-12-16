@@ -2,7 +2,7 @@
 
 Generate TOC (*table of contents*) of headlines from parsed [markdown](http://en.wikipedia.org/wiki/Markdown) file.
 
-image/markdown-toc-plus.gif
+![usage](https://github.com/uraway/markdown-toc-plus/blob/master/image/markdown-toc-plus.gif?raw=true)
 
 ## Features
 
