@@ -113,7 +113,7 @@ class Toc
       if result
         depthFrom = if @options.depthFrom isnt undefined then @options.depthFrom else 1
         depthTo = if @options.depthTo isnt undefined then @options.depthTo else 6
-        if result[0].length <= parseInt depthTo
+        if (result[0].length <= parseInt depthTo) and (result[0].length >= parseInt depthFrom)
           @list.push
             depth: result[0].length
             line: new String line
