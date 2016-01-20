@@ -1,14 +1,10 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:4 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [一](#一)
-	- [２](#２)
-		- [さん](#さん)
-			- [ヨン](#ヨン)
-				- [伍](#伍)
-					- [66](#66)
+- [２](#２)
+	- [さん](#さん)
+		- [ヨン](#ヨン)
 
 <!-- /TOC -->
-
 # 一
 ## ２
 ### さん

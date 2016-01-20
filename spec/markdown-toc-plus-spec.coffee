@@ -19,6 +19,11 @@ describe "the markdown-toc-plus", ->
       editor = atom.workspace.getActiveTextEditor()
       expect(editor.getPath()).toContain 'test.md'
 
+    it "creats TOC before an editor saves a buffer", ->
+      editor.insertText("<!-- /TOC -->")
+      editor.save()
+      expect(editor.getText()).toBe "<!-- /TOC -->"
+
 
   describe "when Create command is toggled", ->
     it "creates a toc", ->
